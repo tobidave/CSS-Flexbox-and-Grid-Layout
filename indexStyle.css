@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+:root{
+    /* colors */
+    --white: hsla(0, 0%, 100%, 0.75);
+    --orangeColor: hsl(31, 77%, 52%);
+    --lightGreen: hsl(184, 100%, 22%);
+    --darkGreen: hsl(179, 100%, 13%);
+    --lightGrey: hsl(0, 0%, 95%);
+
+    --spacing: 20px;
+    --header: 'Big Shoulders Display', cursive;
+    --paragraph: 'Lexend Deca', sans-serif;
+}
+body{
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--lightGrey);
+}
+main{
+    display: flex;
+    border: 10px solid var(--lightGrey);
+    border-radius: 10px;
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-clip: padding-box;
+
+}
+
+main div{
+    padding: var(--spacing);
+    
+}
+h1{
+    font-family: var(--header);
+    color: var(--lightGrey);
+}
+p{
+    line-height: 29px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: var(--paragraph);
+    color: var(--white);
+}
+.btn{
+    display: grid;
+    margin-top: 4rem;
+    padding: var(--spacing);   
+}
+.sedans{
+    background-color: var(--orangeColor);
+    width: 70%;
+
+
+}
+.sedans .btn{
+    color: var(--orangeColor);
+    background-color: var(--white);
+    width: 70%;
+    place-items: center;
+    border-radius: 26px;
+    text-decoration: none;
+}
+.suvs{
+    background-color: var(--lightGreen);
+    width: 70%;
+
+
+}
+.suvs .btn{
+    color: var(--lightGreen);
+    background-color: var(--white);
+    width: 70%;
+    place-items: center;
+    border-radius: 26px;
+    text-decoration: none;
+}
+.luxury{
+    background-color: var(--darkGreen);
+    width: 70%;
+
+
+}
+.luxury .btn{
+    color: var(--darkGreen);
+    background-color: var(--white);
+    width: 70%;
+    place-items: center;
+    border-radius: 26px;
+    text-decoration: none;
+}
+.btn:hover{
+    border: 3px solid var(--white);
+    background: transparent;
+    color: var(--white);
+}
